@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Logando no servidor
+          run: echo "Logando no servidor"
       - name: Verificar index.html
               run: test -f index.html
-              
+      - name: Listar arquivos
+          run: ls -l
